@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"build",
+				"--examples"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "Cargo-build"
+		},
+		{
+			"label": "PyOCD-flash-blinky",
+			"type": "shell",
+			"command": "pyocd",
+			"options": {
+				"cwd": "${workspaceRoot}"
+			},
+			"args": [
+				"flash",
+				"-t",
+				"nrf52840",
+				"--format",
+				"elf",
+				"target/thumbv7em-none-eabihf/debug/examples/blinky"
+			],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"dependsOn": ["Cargo-build"],
+		}
+	]
+}

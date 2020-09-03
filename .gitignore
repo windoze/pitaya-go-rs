@@ -1,0 +1,4 @@
+/target
+/.vscode/.cortex-debug*
+/.idea
+/Cargo.lock
