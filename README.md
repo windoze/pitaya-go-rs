@@ -2,9 +2,9 @@
 
 https://github.com/makerdiary/pitaya-go
 
-## PyOCD
+## Debug
 
-VSCode configurations are set to use [Pitaya-Link](https://wiki.makerdiary.com/pitaya-link/) debug probe, but others may also work.
+VSCode configurations are set to use [Pitaya-Link](https://wiki.makerdiary.com/pitaya-link/) debug probe and PyOCD, but others may also work.
 
 ## License
 
