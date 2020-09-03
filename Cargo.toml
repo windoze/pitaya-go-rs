@@ -3,6 +3,7 @@ name = "pitaya-go"
 version = "0.0.1"
 authors = ["Chen Xu <windoze@0d0a.com>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
 categories = ["embedded", "hardware-support", "no-std"]
 description = "Rust support for the makerdiary Pitaya Go development board"
 keywords = ["arm", "cortex-m", "nrf52840", "hal"]
