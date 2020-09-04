@@ -75,18 +75,17 @@ define_pins!(
 
         pin power_led = p1_15: P1_15,
 
-        // TODO: Not sure if these are correct, need to take a look into the schematic file
         /// ~RESET line to the QSPI flash
-        pin qspi_reset = p1_01: P1_01,
+        pin qspi_reset = p1_02: P1_02,
         /// ~WP Write protect pin on the QSPI flash.
-        pin qspi_wp = p1_02: P1_02,
+        pin qspi_wp = p1_05: P1_05,
         /// SPI SCLK for QSPI flash
-        pin qspi_sclk = p1_03: P1_03,
+        pin qspi_sclk = p1_04: P1_04,
         /// SPI MISO for QSPI flash
-        pin qspi_miso = p1_04: P1_04,
+        pin qspi_miso = p1_01: P1_01,
         /// SPI MOSI for QSPI flash
-        pin qspi_mosi = p1_05: P1_05,
+        pin qspi_mosi = p1_06: P1_06,
         /// ~CS for the QSPI flash
-        pin qspi_cs = p1_06: P1_06,
+        pin qspi_cs = p1_03: P1_03,
     }
 );
